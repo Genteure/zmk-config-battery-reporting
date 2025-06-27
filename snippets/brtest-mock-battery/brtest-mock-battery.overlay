@@ -1,0 +1,9 @@
+/ {
+    chosen {
+        zmk,battery = &mock_battery_sensor;
+    };
+
+    mock_battery_sensor: mock_battery_sensor {
+        compatible = "zmk,battery-mock";
+    };
+};

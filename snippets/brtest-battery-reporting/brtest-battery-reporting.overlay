@@ -1,0 +1,26 @@
+
+/ {
+    chosen {
+        zmk,battery-reporting = &battery_reporting;
+    };
+
+    battery_reporting: battery_reporting {
+        compatible = "zmk,battery-reporting";
+
+        c_dongle {
+            display-name = "My Dongle";
+            // hidden;
+        };
+        a_left {
+            display-name = "Left";
+            cpf = <0x010D>;
+        };
+        b_right {
+            display-name = "Right";
+            cpf = <0x010E>;
+        };
+        // pad {
+        //     display-name = "Extra Pad";
+        // };
+    };
+};
